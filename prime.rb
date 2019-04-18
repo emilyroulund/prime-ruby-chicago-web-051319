@@ -1,11 +1,7 @@
 def prime? (number)
 if number <= 1
   return false
-elsif number == 2 
-  return true 
-elsif number % 2 == 0
-   return false
- else
-   return true
+    (2..num-1).to_a.all? do |possible_factor|
+      num % possible_factor != 0
  end 
 end
